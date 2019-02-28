@@ -66,7 +66,7 @@ $("#gesturepwd").on("hasPasswd",function(e,passwd){
     //passed为用户所输入的密码，进行处理，加密后交给后端验证等。。。
 
     var result= //用户密码对或错
-    if(result == true){
+    if(result == passwd){//我认为应该是用户输入的密码和result进行比较
         $("#gesturepwd").trigger("passwdRight");
         setTimeout(function(){
 
